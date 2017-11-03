@@ -1,5 +1,6 @@
 {
   "name": "mm-markov-generator",
+  "homepage": "https://ha-shine.github.io/mm_markov_generator",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -8,9 +9,14 @@
     "react-scripts": "1.0.16"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "gh-pages": "^1.0.0"
   }
 }
