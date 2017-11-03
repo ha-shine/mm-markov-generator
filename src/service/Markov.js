@@ -68,7 +68,7 @@ export default class Markov {
         }
         for (let i = 0; i < this.outputLen; i++) {
             let choices = this.chain[words.join("")];
-            if (choices.length === 0) {
+            if (!choices || choices.length === 0) {
                 break;
             }
             let next = choices[Math.floor(Math.random()*choices.length)];

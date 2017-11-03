@@ -83,10 +83,10 @@ export default class MarkovArea extends Component {
                             </div>
                         </div>
                     </div>
-                    { 
-                        this.state.outputText === '' ?
-                        '' :
-                        <div className="columns">
+                    <div className="columns">
+                        { 
+                            this.state.outputText === '' ?
+                            '' :
                             <div className="column">
                                 <article className="message">
                                     <div className="message-body">
@@ -94,8 +94,8 @@ export default class MarkovArea extends Component {
                                     </div>
                                 </article>
                             </div>
-                        </div>
-                    }
+                        }
+                    </div>
                 </div>
             </section>
         )
