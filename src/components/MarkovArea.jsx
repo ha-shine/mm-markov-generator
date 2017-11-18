@@ -64,11 +64,11 @@ export default class MarkovArea extends Component {
                     <div className="level">
                         <div className="level-left">
                             <div className="level-item">Prefix Length</div>
-                            <div className="level-item" style={{justifyContent: 'left', flexShrink: '1', width: '6%'}}>
+                            <div className="level-item">
                                 <input type="text" className="input" value={this.state.prefixLen} onChange={this.onPrefixLenChange}/>
                             </div>
                             <div className="level-item">Output Length</div>
-                            <div className="level-item" style={{justifyContent: 'left', flexShrink: '1', width: '8%'}}>
+                            <div className="level-item">
                                 <input type="text" className="input" value={this.state.outputLen} onChange={this.onOutputLenChange}/>
                             </div>
                         </div>
